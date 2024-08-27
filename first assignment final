@@ -1,0 +1,466 @@
+{
+ "cells": [
+  {
+   "cell_type": "markdown",
+   "id": "cd5f4e4e-d1ec-4005-a8a3-916b6ae889e9",
+   "metadata": {},
+   "source": [
+    "Ques 1:Explain the key features of python that makes it a popular choice for programming\n",
+    "Python is a high-level,interpreted programmimg language that is widely used for various purposes such as:Web development,scientific computing,Data analysis and machine learning,automation,education etc\n",
+    "KEY FEATURES OF PYTHON:\n",
+    "1:Easy to learn and use:Simple syntax,forgiving,intuitive.\n",
+    "2:High level language:Abstracts away low-level details,focuses on logic.\n",
+    "3:Large standard library: includes modules for various tasks ,such as file 1/0,networking,and data structures.\n",
+    "4:object-orientation :Supports classes,objects,inheritance,polymorphism.\n",
+    "5:Interpreted language:Code is execuated line by line,no compilation needed."
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "3d49ece1-0639-4957-a5c1-2810ba00c1b9",
+   "metadata": {},
+   "source": [
+    "Ques 2:Describe the role of predefine keywords in python and provide examples of how are used in program.\n",
+    "In Python, pre-defined keywords are reserved words that have special meanings and are used to define the structures and syntax of the language.\n",
+    "1:Creating loops (for,while,break)\n",
+    "2:Defining function:(def,return)\n",
+    "3:conditional statement:(if,elif,else)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "148d7b31-d03e-4bdf-b7e8-36e18e32dffb",
+   "metadata": {},
+   "source": [
+    "Ques 3:Compare and contrast mutable and immutable objects in python with examples.\n",
+    "In Python,a mutable object is an object that can be modified after it's created.In other worlds,it's state can be changed.\n",
+    "Examples of mutable objects in python:List,dictionaries,sets."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 12,
+   "id": "d72951f2-1ce8-48f5-9b83-17c2aa44dca4",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "['vansh', 2, 3, 4]"
+      ]
+     },
+     "execution_count": 12,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "#List\n",
+    "list1=[1,2,3,4]\n",
+    "list1[2]\n",
+    "list1[0]=\"vansh\"\n",
+    "list1"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "2a8920b8-db88-4b4d-b4a4-61cfe4601b8a",
+   "metadata": {},
+   "source": [
+    "While immutable objects (like integers,float,strings and tuples) cannot be changed after creation."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 24,
+   "id": "efdf880c",
+   "metadata": {},
+   "outputs": [
+    {
+     "ename": "NameError",
+     "evalue": "name 'peint' is not defined",
+     "output_type": "error",
+     "traceback": [
+      "\u001b[0;31m---------------------------------------------------------------------------\u001b[0m",
+      "\u001b[0;31mNameError\u001b[0m                                 Traceback (most recent call last)",
+      "Cell \u001b[0;32mIn[24], line 4\u001b[0m\n\u001b[1;32m      2\u001b[0m int1\u001b[38;5;241m=\u001b[39m\u001b[38;5;241m3\u001b[39m\n\u001b[1;32m      3\u001b[0m int1 \u001b[38;5;241m+\u001b[39m\u001b[38;5;241m=\u001b[39m\u001b[38;5;241m1\u001b[39m\n\u001b[0;32m----> 4\u001b[0m \u001b[43mpeint\u001b[49m(int1)\n",
+      "\u001b[0;31mNameError\u001b[0m: name 'peint' is not defined"
+     ]
+    }
+   ],
+   "source": [
+    "#Integer\n",
+    "int1=3\n",
+    "int1 +=1\n",
+    "peint(int1)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "3bcf38a0-9433-40c8-93d2-00142f338614",
+   "metadata": {},
+   "source": [
+    "Ques 4:Discuss the different type of operators in python and provide examples of how they are used.\n",
+    "1:ARITHMETIC OPERATORS- Used to perform mathematics operation like-Addition,substraction,multiplication,division and exponentiation."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 28,
+   "id": "4dc1dd9e-8dc6-469b-aaaf-0bf0904d9e89",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "30\n",
+      "-10\n",
+      "200\n",
+      "0.5\n",
+      "10\n",
+      "100000000000000000000\n"
+     ]
+    }
+   ],
+   "source": [
+    "a=10\n",
+    "b=20\n",
+    "print(a+b)\n",
+    "print(a-b)\n",
+    "print(a*b)\n",
+    "print(a/b)\n",
+    "print(a%b)\n",
+    "print(a**b)"
+   ]
+  },
+  {
+   "cell_type": "raw",
+   "id": "6044ddc5-3d04-4a85-a2d7-171cbd4090c2",
+   "metadata": {},
+   "source": [
+    "2.COMPARISION OPERATOR:Used for compare two values and return a boolean like true or false"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 42,
+   "id": "623f2f31-6565-452e-99cd-1f5bb9b52ced",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "True"
+      ]
+     },
+     "execution_count": 42,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "2==2\n",
+    "a=2\n",
+    "a\n",
+    "5!=2"
+   ]
+  },
+  {
+   "cell_type": "raw",
+   "id": "2d74c38e-f9d4-4f5a-9453-9cfa0e662a01",
+   "metadata": {},
+   "source": [
+    "3.LOGICAL OPERATOR:Used to combine condition statement\n",
+    "1:AND\n",
+    "2:OR\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 49,
+   "id": "b3fc75a0-e08b-417a-af9d-2dc2b8596aea",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "10"
+      ]
+     },
+     "execution_count": 49,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "a=10\n",
+    "b=20\n",
+    "a and b\n",
+    "a or b"
+   ]
+  },
+  {
+   "cell_type": "raw",
+   "id": "02019749-ace7-426b-925f-a3cc832d5243",
+   "metadata": {},
+   "source": [
+    "4.ASSIGNMENT OPERATOR:Used to assign value\n",
+    "(=)\n",
+    "(+=)\n",
+    "(-=)\n",
+    "(*=)\n",
+    "(/=)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 54,
+   "id": "18259045-7176-4b67-9853-46df504885be",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "15"
+      ]
+     },
+     "execution_count": 54,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "a=10\n",
+    "a\n",
+    "a+5"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "652ac482-8011-4f26-a137-e5c9c9601a30",
+   "metadata": {},
+   "source": [
+    "5:BITWISE OPERATOR:It work on bits and perform bit by bit operations.\n",
+    "Bitwise AND(&)\n",
+    "Bitwise OR\n",
+    "Bitwise not(-)\n",
+    "Bitwise xor(*)\n",
+    "left shift(<<)\n",
+    "Right shift (>>)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 58,
+   "id": "0bead405-1f10-4c5a-82ee-64571a0e5feb",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "2"
+      ]
+     },
+     "execution_count": 58,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "bin(18)\n",
+    "bin(3)\n",
+    "18&3"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "0e6c59b8-dc44-4e71-adca-ec62299cb1a6",
+   "metadata": {},
+   "source": [
+    "6.Membership operator:membership operator test whether a value is a member of a sequence.\n",
+    "(in)\n",
+    "(not in)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 61,
+   "id": "1b0da7a6-7a44-404d-9eb5-11a1bd8b0771",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "True"
+      ]
+     },
+     "execution_count": 61,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "a=\"pwskills\"\n",
+    "\"p\" in a"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "61c406f3-c790-488b-949a-93c27894afa4",
+   "metadata": {},
+   "source": [
+    "7:Identity operator:Identity operators compare the memory locations of two objects:<br>\n",
+    "(is)\n",
+    "(is not)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 63,
+   "id": "79424d89-12f1-4f20-bbe9-d7fb2b6bc210",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "False"
+      ]
+     },
+     "execution_count": 63,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "a=2\n",
+    "b=3\n",
+    "a is b"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "15929cc8-1d29-4455-a5b4-5d1e8ca5b02d",
+   "metadata": {},
+   "source": [
+    "Ques 5:Explain the concept of type casting in python with examples.<br>\n",
+    "Typecasting in python is the process of converting a variable from one data type to another,it is very useful to perform operations on variables that require them to be specific datatype.<br>\n",
+    "Typecasting are two types :<br>\n",
+    "1:Implicit:python understand the datatype on its own<br>\n",
+    "2:Explicit:Need to type manually the data type\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 65,
+   "id": "5d0a52bc-4496-42fc-bb98-857f2b69a90f",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "int"
+      ]
+     },
+     "execution_count": 65,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "a=2\n",
+    "type(a)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "b616d662-a02e-4620-bb9f-dd2012b167b8",
+   "metadata": {},
+   "source": [
+    "Ques 6:how do conditional statements work in python?iiustrate with example?<BR>\n",
+    "Conditional statements in python allow to execute specific blocks of code depending on whether certain conditions are true and false.<br>\n",
+    "Type of conditional statments in python<BR>\n",
+    "1.IF<BR>\n",
+    "2.IF ELSE<BR>\n",
+    "3.IF-ELIF-ELSE<BR>\n",
+    "4.NESTED IF-ELSE<BR>"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 76,
+   "id": "95f3a768-e19b-45c2-b0e5-1f234ec83c90",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "you can vote\n"
+     ]
+    }
+   ],
+   "source": [
+    "age=10\n",
+    "if age>5:\n",
+    "    print(\"you can vote\")"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "cabb8766-b542-46b1-bb5c-fdba1632374c",
+   "metadata": {},
+   "source": [
+    "Ques 7:Describe the different types of loop in python and their use cases with example.<br>\n",
+    "Loops are used to execute a block of code repeatedly as long as a specified condition is true or for a fixed number of iteration.<br>\n",
+    "1:for loop<br>\n",
+    "2:while loop<br>"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 78,
+   "id": "45ee5889-6fb3-4391-81c5-c6937bd481b6",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "1\n",
+      "2\n",
+      "3\n",
+      "4\n"
+     ]
+    }
+   ],
+   "source": [
+    "#for loop\n",
+    "number=[1,2,3,4]\n",
+    "for num in number :\n",
+    "    print(num)"
+   ]
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python 3 (ipykernel)",
+   "language": "python",
+   "name": "python3"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.10.8"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 5
+}
